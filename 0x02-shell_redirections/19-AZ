@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $@ | tr 'A,c' 'Z,e'
+cat  $@ | tr 'A,c' 'Z,e'
