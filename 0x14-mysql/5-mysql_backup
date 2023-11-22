@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Create databases backup
 
-mysqldump --all-databases -u root --password="$1" > backup.sql
+mysqldump --all-databases -u root --password="$1" 2>&1 | grep -v "Warning: Using a password" > backup.sql
 tar -cvzf "$(date '+%d-%m-%Y.tar.gz')" backup.sql
