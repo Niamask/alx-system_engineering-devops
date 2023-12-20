@@ -1,5 +1,5 @@
 [Unit]
-Description=gunicorn.service - AirBnB clone by B3zaleel run with Gunicorn.
+Description=gunicorn.service - Runs Gunicorn for AirBnB clone.
 After=network.target
 
 [Service]
